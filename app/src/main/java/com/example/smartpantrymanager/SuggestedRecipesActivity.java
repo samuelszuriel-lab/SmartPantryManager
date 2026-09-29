@@ -90,6 +90,12 @@ public class SuggestedRecipesActivity extends AppCompatActivity {
 
         if (suggestedRecipes.isEmpty()) {
 
+            txtNoRecipes.setText(
+                    "No recipes can be made with your current pantry.\n\n" +
+                            "Add the required ingredients and make sure you have " +
+                            "enough of each ingredient."
+            );
+
             txtNoRecipes.setVisibility(TextView.VISIBLE);
             listRecipes.setVisibility(ListView.GONE);
 
