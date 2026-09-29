@@ -124,13 +124,18 @@ public class MainActivity extends AppCompatActivity {
             );
 
             String ingredientText =
-                    name + " - " + quantity + " " + unit;
+                    name +
+                            "\nQuantity: " +
+                            quantity +
+                            " " +
+                            unit;
 
             if (expiryDate != null &&
                     !expiryDate.isEmpty()) {
 
                 ingredientText +=
-                        "\nExpiry: " + expiryDate;
+                        "\nExpiry: " +
+                                expiryDate;
             }
 
             ingredients.add(ingredientText);
