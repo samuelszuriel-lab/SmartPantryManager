@@ -111,7 +111,7 @@ public class RecipeDetailActivity extends AppCompatActivity {
                         .append(unit)
                         .append(" ")
                         .append(name)
-                        .append("\n");
+                        .append("\n\n");
             }
         }
 
