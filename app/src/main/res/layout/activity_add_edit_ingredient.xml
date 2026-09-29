@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingredient Name"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editIngredientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ingredient name"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter quantity"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unit"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. kg, g, litres"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expiry Date (Optional)"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editExpiryDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="YYYY-MM-DD"
+        android:inputType="date"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnSaveIngredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Ingredient" />
+
+</LinearLayout>
