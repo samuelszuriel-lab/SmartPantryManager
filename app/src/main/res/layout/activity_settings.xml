@@ -1,55 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp">
+    android:layout_height="match_parent">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Settings"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="30dp" />
+        android:orientation="vertical"
+        android:padding="24dp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Smart Pantry Manager"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="12dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="30dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Manage your pantry ingredients and discover recipes using only the ingredients you already have."
-        android:textSize="17sp"
-        android:layout_marginBottom="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Smart Pantry Manager"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="About the App"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="12dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage your pantry ingredients and discover recipes using only the ingredients you already have."
+            android:textSize="17sp"
+            android:layout_marginBottom="30dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Smart Pantry Manager helps users keep track of pantry ingredients, quantities and expiry dates. Suggested recipes are displayed only when all required ingredients are available in sufficient quantities."
-        android:textSize="16sp"
-        android:layout_marginBottom="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Features"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Version 1.0"
-        android:textSize="16sp"
-        android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Add, edit and delete pantry ingredients&#10;&#10;• Store ingredient quantities and units&#10;&#10;• Record optional expiry dates&#10;&#10;• View recipe suggestions based on available ingredients&#10;&#10;• Recipe suggestions require all ingredients in sufficient quantities&#10;&#10;• View detailed recipe ingredients and preparation instructions"
+            android:textSize="16sp"
+            android:layout_marginBottom="30dp" />
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About the App"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Smart Pantry Manager helps users keep track of pantry ingredients, quantities and expiry dates. Suggested recipes are displayed only when all required ingredients are available in sufficient quantities."
+            android:textSize="16sp"
+            android:layout_marginBottom="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0"
+            android:textSize="16sp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>
