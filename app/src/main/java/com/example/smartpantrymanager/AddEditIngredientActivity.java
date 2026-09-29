@@ -8,6 +8,11 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class AddEditIngredientActivity extends AppCompatActivity {
 
     EditText editIngredientName;
@@ -124,6 +129,11 @@ public class AddEditIngredientActivity extends AppCompatActivity {
             return;
         }
 
+        if (!expiryDate.isEmpty() && !isValidDate(expiryDate)) {
+            editExpiryDate.setError("Use YYYY-MM-DD format");
+            return;
+        }
+
         if (isEditMode) {
 
             boolean updated = databaseHelper.updateIngredient(
@@ -180,6 +190,26 @@ public class AddEditIngredientActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT
                 ).show();
             }
+        }
+    }
+
+    private boolean isValidDate(String dateString) {
+
+        SimpleDateFormat dateFormat =
+                new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+
+        dateFormat.setLenient(false);
+
+        try {
+
+            Date date = dateFormat.parse(dateString);
+
+            return date != null &&
+                    dateFormat.format(date).equals(dateString);
+
+        } catch (ParseException e) {
+
+            return false;
         }
     }
 }
