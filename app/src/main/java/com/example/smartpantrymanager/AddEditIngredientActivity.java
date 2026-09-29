@@ -119,6 +119,11 @@ public class AddEditIngredientActivity extends AppCompatActivity {
             return;
         }
 
+        if (quantity <= 0) {
+            editQuantity.setError("Quantity must be greater than 0");
+            return;
+        }
+
         if (isEditMode) {
 
             boolean updated = databaseHelper.updateIngredient(
