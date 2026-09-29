@@ -105,6 +105,13 @@ public class AddEditIngredientActivity extends AppCompatActivity {
             return;
         }
 
+        if (name.length() < 2) {
+            editIngredientName.setError(
+                    "Ingredient name must contain at least 2 characters"
+            );
+            return;
+        }
+
         if (quantityText.isEmpty()) {
             editQuantity.setError("Please enter a quantity");
             return;
